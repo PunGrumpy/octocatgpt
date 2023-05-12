@@ -1,7 +1,7 @@
 version: '3'
 services:
   github-bot:
-    container_name: octogpt
+    container_name: octocatgpt
     build:
       context: .
       dockerfile: Dockerfile

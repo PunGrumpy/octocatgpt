@@ -1,6 +1,6 @@
 # 🐙 OctoCatGPT
 
-OctoCatGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests. Whenever an issue is opened or a pull request is created or updated, OctoGPT automatically reviews the content and posts a comment with AI insights.
+OctoCatGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests. Whenever an issue is opened or a pull request is created or updated, OctoCatGPT automatically reviews the content and posts a comment with AI insights.
 
 ## 🌟 Features
 
@@ -14,8 +14,8 @@ OctoCatGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insight
 1. 📂 Clone the repository:
 
    ```bash
-   git clone https://github.com/PunGrumpy/octogpt.git
-   cd octogpt
+   git clone https://github.com/PunGrumpy/octocatgpt.git
+   cd octocatgpt
    ```
 
 2. 📦 Install dependencies:
@@ -42,8 +42,8 @@ OctoCatGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insight
 1. 📂 Clone the repository:
 
    ```bash
-   git clone https://github.com/PunGrumpy/octogpt.git
-   cd octogpt
+   git clone https://github.com/PunGrumpy/octocatgpt.git
+   cd octocatgpt
    ```
 
 2. 📄 Copy the `.env.example` file to a new file named `.env`:
