@@ -14,7 +14,7 @@ async function handlePullRequestOpenedAndSynchronized(context) {
   const repo = await context.octokit.repos.get(context.repo())
   const lang = repo.data.language?.toLowerCase() || 'javascript'
 
-  const gptClient = new ChatGPTAPI({ sessionToken: process.env.GPT_API_KEY })
+  const gptClient = new ChatGPTAPI({ sessionToken: process.env.SESSION_TOKEN })
 
   gptClient.ensureAuth()
 

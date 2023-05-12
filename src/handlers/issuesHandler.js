@@ -4,7 +4,7 @@ async function handleIssueOpened(context) {
   const issue = context.payload.issue
   const repo = context.repo()
 
-  const gptClient = new ChatGPTAPI({ sessionToken: process.env.GPT_API_KEY })
+  const gptClient = new ChatGPTAPI({ sessionToken: process.env.SESSION_TOKEN })
 
   gptClient.ensureAuth()
 
