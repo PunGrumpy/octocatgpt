@@ -1,33 +1,68 @@
-# gpt-github-bot
+# 🐙 OctoGPT
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
+OctoGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests. Whenever an issue is opened or a pull request is created or updated, OctoGPT automatically reviews the content and posts a comment with AI insights.
 
-## Setup
+## 🌟 Features
 
-```sh
-# Install dependencies
-npm install
+- 📝 Auto comments on new issues with AI insights
+- 🔍 Reviews code changes in pull requests and provides AI insights
 
-# Run the bot
-npm start
-```
+## 🚀 Setup
 
-## Docker
+### 🖥️ Local Setup
 
-```sh
-# 1. Build container
-docker build -t gpt-github-bot .
+1. 📂 Clone the repository:
 
-# 2. Start container
-docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> gpt-github-bot
-```
+   ```bash
+   git clone https://github.com/PunGrumpy/octogpt.git
+   cd octogpt
+   ```
 
-## Contributing
+2. 📦 Install dependencies:
 
-If you have suggestions for how gpt-github-bot could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
+   ```bash
+   pnpm install
+   ```
 
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
+3. 📄 Copy the `.env.example` file to a new file named `.env`:
 
-## License
+   ```bash
+   cp .env.example .env
+   ```
 
-[ISC](LICENSE) © 2023 PunGrumpy
+4. 🔑 Open the `.env` file and replace the placeholders with your actual values.
+
+5. 🏃 Run the bot:
+   ```bash
+   pnpm start
+   ```
+
+### 🐳 Docker Setup
+
+1. 📂 Clone the repository:
+
+   ```bash
+   git clone https://github.com/PunGrumpy/octogpt.git
+   cd octogpt
+   ```
+
+2. 📄 Copy the `.env.example` file to a new file named `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+3. 🔑 Open the `.env` file and replace the placeholders with your actual values.
+
+4. 🐳 Build and run the Docker image:
+   ```bash
+   docker compose up --build -d
+   ```
+
+## 🤝 Contributing
+
+Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
+
+## 📜 License
+
+This project is licensed under the ISC License - see the `LICENSE` file for details.

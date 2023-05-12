@@ -1,11 +1,11 @@
 {
-  "name": "gpt-github-bot",
+  "name": "octo-gpt",
   "version": "1.0.0",
   "private": true,
-  "description": "A Probot app",
+  "description": "A GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests.",
   "author": "PunGrumpy",
   "license": "ISC",
-  "homepage": "https://github.com//",
+  "homepage": "https://github.com/PunGrumpy/octogpt",
   "keywords": [
     "probot",
     "github",
