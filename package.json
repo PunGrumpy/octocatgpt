@@ -1,5 +1,5 @@
 {
-  "name": "octo-gpt",
+  "name": "octo-cat-gpt",
   "version": "1.0.0",
   "private": true,
   "description": "A GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests.",

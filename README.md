@@ -1,6 +1,6 @@
-# 🐙 OctoGPT
+# 🐙 OctoCatGPT
 
-OctoGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests. Whenever an issue is opened or a pull request is created or updated, OctoGPT automatically reviews the content and posts a comment with AI insights.
+OctoCatGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests. Whenever an issue is opened or a pull request is created or updated, OctoGPT automatically reviews the content and posts a comment with AI insights.
 
 ## 🌟 Features
 
