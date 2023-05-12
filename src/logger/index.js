@@ -1,7 +1,7 @@
 module.exports = app => {
   return {
-    info: message => {
-      app.log.info(message)
+    info: () => {
+      app.log.info(`[Bot] ${this.name}`)
     }
   }
 }
