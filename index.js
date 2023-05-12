@@ -1,21 +1,11 @@
-/**
- * This is the main entrypoint to your Probot app
- * @param {import('probot').Probot} app
- */
-module.exports = (app) => {
-  // Your code here
-  app.log.info("Yay, the app was loaded!");
+const handleIssueOpened = require('./handlers/issuesHandler')
+const handlePullRequestOpenedAndSynchronized = require('./handlers/pullRequestHandler')
+const logger = require('./logger')
 
-  app.on("issues.opened", async (context) => {
-    const issueComment = context.issue({
-      body: "Thanks for opening this issue!",
-    });
-    return context.octokit.issues.createComment(issueComment);
-  });
+module.exports = app => {
+  logger(app).info(`App is running on ${process.env.NODE_ENV} mode`)
 
-  // For more information on building apps:
-  // https://probot.github.io/docs/
-
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
-};
+  app.on('issues.opened', handleIssueOpened)
+  app.on('pull_request.opened', handlePullRequestOpenedAndSynchronized)
+  app.on('pull_request.synchronize', handlePullRequestOpenedAndSynchronized)
+}
