@@ -5,9 +5,8 @@
       "maxDuration": 10
     }
   },
-  "buildCommand": "pnpm run build",
+  "buildCommand": "pnpm run dev",
   "outputDirectory": "dist",
-  "devCommand": "pnpm run dev",
   "github": {
     "silent": true,
     "owner": "PunGrumpy"
