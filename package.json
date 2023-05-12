@@ -12,20 +12,28 @@
     "probot-app"
   ],
   "scripts": {
-    "start": "probot run ./index.js",
+    "start": "probot run ./dist/index.js",
+    "dev": "nodemon",
+    "build": "rollup -c --bundleConfigAsCjs",
     "test": "jest"
   },
   "dependencies": {
     "@oceanlvr/chatgpt": "^2.0.0",
-    "probot": "^12.2.4"
+    "nodemon": "^2.0.22",
+    "probot": "^12.3.0"
   },
   "devDependencies": {
-    "jest": "^29.0.0",
-    "nock": "^13.0.5",
-    "smee-client": "^1.2.2"
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^5.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "jest": "^29.5.0",
+    "nock": "^13.3.1",
+    "rollup": "^3.21.6",
+    "smee-client": "^1.2.3"
   },
   "engines": {
-    "node": ">= 10.13.0"
+    "node": ">= 16"
   },
   "jest": {
     "testEnvironment": "node"
