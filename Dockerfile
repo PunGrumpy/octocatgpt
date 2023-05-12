@@ -1,8 +1,6 @@
-FROM node:18-slim
+FROM node:latest-slim
 WORKDIR /usr/src/app
-COPY package.json package-lock.json ./
-RUN npm ci --production
-RUN npm cache clean --force
+COPY package.json pnpm-lock.yaml ./
+RUN npm install -g pnpm && pnpm install
 ENV NODE_ENV="production"
 COPY . .
-CMD [ "npm", "start" ]
