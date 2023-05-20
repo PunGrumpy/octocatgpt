@@ -1,3 +1,13 @@
+# 📢 NOTICE
+
+**THIS PROJECT IS NOT WORKING YET. IT IS STILL IN DEVELOPMENT. PLEASE DO NOT USE IT YET.**
+
+from [PunGrumpy](https://github.com/PunGrumpy/octocatgpt)
+
+If you want to develop this project, please pull request 🙏🏻
+
+---
+
 # 🐙 OctoCatGPT
 
 OctoCatGPT is a GitHub Probot App that uses OpenAI's GPT-4 to provide AI insights on issues and pull requests. Whenever an issue is opened or a pull request is created or updated, OctoCatGPT automatically reviews the content and posts a comment with AI insights.
