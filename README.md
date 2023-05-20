@@ -2,7 +2,29 @@
 
 **THIS PROJECT IS NOT WORKING YET. IT IS STILL IN DEVELOPMENT. PLEASE DO NOT USE IT YET.**
 
-from [PunGrumpy](https://github.com/PunGrumpy/octocatgpt)
+## 🐛 ERROR MESSAGE
+
+````bash
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:905:11)
+    at Socket._write (node:net:917:8)
+    at writeOrBuffer (node:internal/streams/writable:391:12)
+    at _write (node:internal/streams/writable:332:10)
+    at Socket.Writable.write (node:internal/streams/writable:336:10)
+    at console.value (node:internal/console/constructor:299:16)
+    at console.log (node:internal/console/constructor:376:26)
+    at Fve (/var/task/sandbox.js:247:12817)
+Emitted 'error' event on Socket instance at:
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  errno: -32,
+  code: 'EPIPE',
+  syscall: 'write'
+: Sandbox exited with code 1 and signal null
+```
 
 If you want to develop this project, please pull request 🙏🏻
 
@@ -76,3 +98,4 @@ Please read `CONTRIBUTING.md` for details on our code of conduct, and the proces
 ## 📜 License
 
 This project is licensed under the ISC License - see the `LICENSE` file for details.
+````
