@@ -4,7 +4,7 @@
 
 ## 🐛 ERROR MESSAGE
 
-````bash
+```bash
 Error: ChatGPT failed to refresh auth token. FetchError: invalid json response body at https://chat.openai.com/api/auth/session reason: Unexpected token '<', "<html>
   <"... is not valid JSON
     at ChatGPTAPI.refreshAccessToken (/home/mephisto/Developement/octocatgpt/dist/index.js:7:113449)
@@ -84,4 +84,7 @@ Please read `CONTRIBUTING.md` for details on our code of conduct, and the proces
 ## 📜 License
 
 This project is licensed under the ISC License - see the `LICENSE` file for details.
-````
+
+```
+
+```
