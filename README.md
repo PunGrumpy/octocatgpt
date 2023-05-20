@@ -5,25 +5,11 @@
 ## 🐛 ERROR MESSAGE
 
 ````bash
-Error: write EPIPE
-    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
-    at writeGeneric (node:internal/stream_base_commons:151:3)
-    at Socket._writeGeneric (node:net:905:11)
-    at Socket._write (node:net:917:8)
-    at writeOrBuffer (node:internal/streams/writable:391:12)
-    at _write (node:internal/streams/writable:332:10)
-    at Socket.Writable.write (node:internal/streams/writable:336:10)
-    at console.value (node:internal/console/constructor:299:16)
-    at console.log (node:internal/console/constructor:376:26)
-    at Fve (/var/task/sandbox.js:247:12817)
-Emitted 'error' event on Socket instance at:
-    at emitErrorNT (node:internal/streams/destroy:157:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
-  errno: -32,
-  code: 'EPIPE',
-  syscall: 'write'
-: Sandbox exited with code 1 and signal null
+Error: ChatGPT failed to refresh auth token. FetchError: invalid json response body at https://chat.openai.com/api/auth/session reason: Unexpected token '<', "<html>
+  <"... is not valid JSON
+    at ChatGPTAPI.refreshAccessToken (/home/mephisto/Developement/octocatgpt/dist/index.js:7:113449)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ChatGPTAPI.ensureAuth (/home/mephisto/Developement/octocatgpt/dist/index.js:7:112124)
 ```
 
 If you want to develop this project, please pull request 🙏🏻
